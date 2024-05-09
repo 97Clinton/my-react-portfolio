@@ -1,0 +1,89 @@
+@import "../../responsive.scss";
+
+#projects {
+    padding: 30px 70px;
+    background-color: #f9f9f9;
+
+    .top {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        h2 {
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            color: #147efb;
+            border-bottom: 2px solid ;
+            width: fit-content;
+            padding-bottom: 10px;
+            transition: all 0.4s ease;
+            border-radius: 50%;
+
+            &:hover {
+                scale: 1.07;
+                border-radius: 0;
+            }
+            
+        }
+    }
+
+    .project {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+        margin-bottom: 100px;
+        margin-top: 30px;
+        
+        img {
+            width: 27em;
+            height: 17em;
+        }
+
+        .content {
+            width: 35vw;
+            h3 {
+                font-family: "Poppins", sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                cursor: pointer;
+            }
+            p {
+                font-family: "Mulish", sans-serif;
+                color: #555555;
+            }
+
+            .links {
+                display: flex;
+                justify-content: space-between;
+
+                a {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .right {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    @include tablet {
+        .project {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 21em;
+                height: 14em;
+            }
+
+            .content {
+                width: 70vw;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@import "../../responsive.scss";
+
+footer {
+    height: 150px;
+    background-color: #2d2e32;
+    padding: 40px 70px;
+    width: 100%;
+
+    h3 {
+        color: #fff;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,135 @@
+@import "/src/responsive.scss";
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    background-color: #fff;
+    height: 80px;
+    padding: 0 70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+    // position: fixed;
+    // top: 0;
+    width: 100vw;
+
+    a {
+        transition: all 0.4s ease;
+
+        &:hover {
+            scale: 1.15;
+            color: #147efb;
+        }
+        
+    }
+
+    .left {
+        color: #2d2e32;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        cursor: pointer;
+
+        h2 {
+            font-weight: 700;
+            transition: all 0.4s ease;
+            
+            &:hover {
+                scale: 1.15;
+                color: #2d2e32;
+                
+            }
+        }
+
+        span {
+            color: #147efb;
+        }
+        
+    }
+
+    .right {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .menu {
+        display: none;
+        visibility: hidden;
+    }
+
+    @include tablet {
+        padding: 0 30px;
+
+        .right {
+            display: none;
+
+        } 
+        .menu {
+            visibility: visible;
+            display: flex;
+
+            h2 {
+                font-weight: 700;
+                transition: all 0.4s ease;
+                
+                &:hover {
+                    scale: 1.15;
+                    color: #2d2e32;
+                    
+                }
+            }
+
+            .menu-links {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 70px;
+            }
+            
+            
+
+            .offcanvas {
+                cursor: pointer;
+                
+                span {
+                    color: #147efb;
+                }
+            }
+            
+            .btn {
+                background-color: inherit;
+                border: none;
+                transition: all 0.4s ease;
+                &:hover {
+                    scale: 1.1;
+                }
+                
+                img {
+                    color: #000;
+                }
+            }
+            
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+
+            ul {
+                display: block;
+                
+                a {
+                    line-height: 4;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+}

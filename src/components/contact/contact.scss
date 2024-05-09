@@ -1,0 +1,37 @@
+@import "../../responsive.scss";
+
+#contact {
+    padding: 40px 70px;
+
+    .top {
+        margin-bottom: 40px;
+
+        p {
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #147efb;
+            transition: all 0.4s ease;
+            border-bottom: 2px solid;
+            border-radius: 50%;
+            align-items: center;
+            text-align: center;
+
+            &:hover {
+                padding-bottom: 15px;
+                scale: 1.04;
+            }
+        }
+        h3 {
+            font-weight: 600;
+            line-height: 1.6;
+        }
+    }
+
+    .info {
+        i {
+            font-size: 25px;
+            margin-right: 10px;
+        }
+    }
+}
