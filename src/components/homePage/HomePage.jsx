@@ -8,8 +8,8 @@ function HomePage() {
                     <h1>Front-End React Developer <img src="./wave.png" alt="" /></h1>
                     <p>Hi! I am Clinton. A skilled Front-End React developer with Team-work experience.</p>
                     <div className="link">
-                        <a href=""><img src="./github.svg" alt="" /></a>
-                        <a href=""><img src="./linkedin.svg" alt="" /></a>
+                        <a href="https://github.com/97Clinton"><img src="./github.svg" alt="" /></a>
+                        <a href="https://www.linkedin.com/in/clinton-atayero-3800b5238/"><img src="./linkedin.svg" alt="" /></a>
                     </div>
                 </div>
                 <div className="right">

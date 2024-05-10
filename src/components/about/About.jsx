@@ -13,6 +13,7 @@ function About() {
                     <i class="fa-brands fa-js fa-bounce" style={{color: "rgba(240, 219, 79)"}}></i>
                     <i class="fa-brands fa-react fa-bounce" style={{color: "rgb(40, 165, 206)"}} ></i>
                     <i class="fa-brands fa-sass fa-bounce" style={{color: "rgb(255, 99, 125)"}} ></i>
+                    <i class="fa-brands fa-git-alt fa-bounce" style={{color: "#fd3917"}}></i>
                     <i class="fa-brands fa-node fa-bounce" style={{color: "#3c873a"}}></i>
 
                 </div>
