@@ -13,5 +13,9 @@ body{
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    // overflow-x: scroll;
+    width: 100vw;
     overflow-x: hidden;
+    margin-left: 0;
+    margin-right: 0;
 }
