@@ -5,11 +5,10 @@ import { useState } from 'react';
 
 function Navbar() {
     const [clicked, isClicked] = useState(false); 
-    // const user = true;
 
     return (
         <div className="navbar">
-            <div className="left"><h2><a href=""> <span>Clin</span>Tech</a></h2></div>
+            <div className="left"><h2 className='header-h2'><a href=""> <span>Clin</span>Tech</a></h2></div>
             <div className="right">
                 <a href="#homePage">Home</a>
                 <a href="#about">About</a>

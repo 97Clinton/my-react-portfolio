@@ -4,6 +4,25 @@
     padding: 30px 70px;
     background-color: #f9f9f9;
 
+    @keyframes slideInRight {
+        from {
+            transform: translateX(-250px);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+    @keyframes slideInRightP {
+        from {
+            transform: translateX(350px);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
     .top {
         display: flex;
         justify-content: center;
@@ -35,6 +54,25 @@
         align-items: center;
         margin-bottom: 100px;
         margin-top: 30px;
+
+        .slide {
+            animation-name: slideInLeft;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 5s;
+            animation-iteration-count: 2;
+            animation-direction: normal;
+            animation-fill-mode: both;            
+        }
+        .slider-p {
+            animation-name: slideInRightP;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 5s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: both;            
+        }
         
         img {
             width: 27em;
