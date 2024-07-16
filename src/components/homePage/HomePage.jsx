@@ -1,4 +1,5 @@
 import "./homePage.scss";
+import { motion } from "framer-motion";
 
 function HomePage() {
     return (
@@ -12,9 +13,13 @@ function HomePage() {
                         <a href="https://www.linkedin.com/in/clinton-atayero-3800b5238/"><img src="./linkedin.svg" alt="" /></a>
                     </div>
                 </div>
-                <div className="right">
+                <motion.div className="right"
+                    drag
+                    dragConstraints={{left: 0, top: 0, right: 0, bottom: 0}}
+                    dragElastic={1}
+                >
                     <img src="./mine.png" alt="" className="bounce"/>
-                </div>
+                </motion.div>
             </div>
         </section>
         

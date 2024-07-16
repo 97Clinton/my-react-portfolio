@@ -1,0 +1,55 @@
+@import "../../../../responsive.scss";
+
+.project3 {
+    display: flex;
+    justify-content:center;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 100px;
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+        justify-content: center;
+    }
+
+    img {
+        width: 27em;
+        height: 17em;
+
+        @include tablet {
+            width: 21em;
+            height: 14em;
+        }
+    }
+
+
+    .content {
+        width: 35vw;
+
+        @include tablet {
+            width: 70vw;
+        }
+        
+        h3 {
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        p {
+            font-family: "Mulish", sans-serif;
+            color: #555555;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                font-weight: 600;
+            }
+        }
+    }
+}
