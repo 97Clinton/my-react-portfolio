@@ -11,48 +11,34 @@ function Project4() {
         offset: ["start end", "end end"],
     });
 
-    const projectImgValue = useTransform(
-        scrollYProgress,
-        [0, 1],
-        ["-100%", "0%"],
-    )
-    const projectTextValue = useTransform(
-        scrollYProgress,
-        [0, 1],
-        ["100%", "0%"]
-    )
-
-    
-    const isInView = useInView(containerRef, {once: true});
-    const mainControls = useAnimation()
-
-    useEffect(() => {
-        if (isInView) {
-            mainControls.start("visible");
-        }
-    }, [isInView]);
+    const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+    const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1.5]);
 
 
     return (
-        <motion.div className="project4 shadow p-3 mb-5 bg-body rounded"
+        <motion.div className="project4 shadow-sm p-3 mb-5 bg-body rounded"
             ref={containerRef}
+            style={{
+                scale: scaleProgress,
+                opacity: opacityProgress,
+            }}
         >
-            <motion.a 
-                style={{translateX: projectImgValue}}
-                href="https://97clinton.github.io/Laundry-website/" className="slider-4"><img src="./clinlaundry.png" alt="" />
+            <a href="https://97clinton.github.io/Laundry-website/" className="slider-4"><img src="./clinlaundry.png" alt="" /></a>
 
-            </motion.a>
-
-            <motion.div className="content slider-4"
-                style={{translateX: projectTextValue}}
-            >
+            <div className="content slider-4">
                 <a href="https://97clinton.github.io/Laundry-website/"><h3>CLINLAUNDRY</h3></a>
                 <p>This is a simple Front-End website for Laundry business with contact details, about the business and even a slide show. </p>
+                <div className="stack">
+                    <ul>
+                        <li class="shadow-sm p-1 mb-1 rounded">JavaScript</li> <li class="shadow-sm p-1 mb-1 rounded">HTML, CSS</li> <li class="shadow-sm p-1 mb-1 rounded">Node.Js</li>
+                        <li class="shadow-sm p-1 mb-1 rounded">MongoDB</li> <li class="shadow-sm p-1 mb-1 rounded">Express.Js</li> <li class="shadow-sm p-1 mb-1 rounded">Cloudinary</li>
+                    </ul>
+                </div>
                 <div className="links">
                     <a href="https://github.com/97Clinton/Laundry-website">Code <i class="fa-brands fa-square-github fa-beat"></i></a>
                     <a href="https://97clinton.github.io/Laundry-website/">Live Demo <i class="fa-regular fa-globe fa-beat"></i></a>
                 </div>
-            </motion.div>
+            </div>
             
         </motion.div>
     )

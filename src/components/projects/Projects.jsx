@@ -1,10 +1,21 @@
 import "./projects.scss";
 import { useEffect, useRef } from "react";
-import { motion, useAnimate, useAnimation, useInView, useScroll, useTransform } from "framer-motion";
-import Project2 from "./projectList/project2/Project2";
+import { motion, useAnimation, useInView, useScroll, useTransform } from "framer-motion";
 import Project3 from "./projectList/project3/Project3";
 import Project4 from "./projectList/project4/Project4";
-import Project5 from "./projectList/project5/Project5";
+
+const moreVariant = {
+    visible: {
+        y: [0, -20, 0, -20],
+        transition: {
+            y: {
+                duration: 0.65,
+                yoyo: Infinity,
+                ease: "easeOut"
+            }
+        }
+    }
+}
 
 function Projects() {
     const containerRef = useRef(null);
@@ -14,16 +25,20 @@ function Projects() {
         offset: ["start end", "end end"],
     });
 
-    const projectImgValue = useTransform(
-        scrollYProgress,
-        [0, 1],
-        ["-100%", "0%"]
-    )
-    const projectTextValue = useTransform(
-        scrollYProgress,
-        [0, 1],
-        ["100%", "0%"]
-    )
+    // const projectImgValue = useTransform(
+    //     scrollYProgress,
+    //     [0, 1],
+    //     ["-100%", "0%"]
+    // )
+    // const projectTextValue = useTransform(
+    //     scrollYProgress,
+    //     [0, 1],
+    //     // ["100%", "0%"]
+    //     ["100%", "0%"]
+    // )
+
+    const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+    const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1.5]);
 
     
     const isInView = useInView(containerRef, {once: true});
@@ -55,26 +70,43 @@ function Projects() {
             <motion.div className="projectsContainer">
                 <motion.div className="project1 shadow p-3 mb-5 bg-body rounded"
                     ref={containerRef}
+                    style={{
+                        scale: scaleProgress,
+                        opacity: opacityProgress,
+                    }}
                 >
-                    <motion.a 
-                        style={{translateX: projectImgValue}}
-                        href="https://fetch-metadata-app.onrender.com/" className="slider-1"
-                    ><img src="./metadata.png" alt="" /></motion.a>
+                    <a href="https://fetch-metadata-app.onrender.com/" className="slider-1"><img src="./metadata.png" alt="" /></a>
 
-                    <motion.div className="content slider-1"
-                        style={{translateX: projectTextValue}}
-                    >
+                    <div className="content slider-1">
                         <a href="https://fetchmetadata.cyclic.app/"><h3>Fetch Metadata</h3></a>
-                        <p>A Fullstack website that allows you to extract Metadata information from files like videos, pictures, e-books, even music with just 3 steps. This is a ZURI team project, in which I was the Team Lead. </p>
+                        <p>A Fullstack website that allows users to extract Metadata information ( i.e creation date, geo-location / GPS cordinates, size, Camera settings, software etc. ) from files like videos, pictures, e-books, even music with just 3 steps. This is a ZURI team project, in which I was the Team Lead. </p>
+                        <div className="stack">
+                            <ul>
+                                <li class="shadow-sm p-1 mb-1 rounded">JavaScript</li> <li class="shadow-sm p-1 mb-1 rounded">HTML, CSS</li> <li class="shadow-sm p-1 mb-1 rounded">Node.Js</li>
+                                <li class="shadow-sm p-1 mb-1 rounded">MongoDB</li> <li class="shadow-sm p-1 mb-1 rounded">Express.Js</li> <li class="shadow-sm p-1 mb-1 rounded">Cloudinary</li>
+                            </ul>
+                        </div>
                         <div className="links">
                             <a href="https://github.com/97Clinton/Fetch_Metadata-project">Code <i class="fa-brands fa-square-github fa-beat"></i></a>
                             <a href="https://fetchmetadata.cyclic.app/">Live Demo <i class="fa-regular fa-globe fa-beat"></i> </a>
                         </div>
-                    </motion.div>
+                    </div>
                 </motion.div>
                 
                 <Project3 />
                 <Project4 />
+
+                <motion.div className="more"
+                    variants={moreVariant}
+                    // initial="hidden"
+                    animate="visible"
+                >
+                    <motion.a 
+                        // variants={moreVariant}
+
+                        // animate="visible"
+                        href="/projects"><h4>Click To See More</h4></motion.a>
+                </motion.div>
             </motion.div>
             
         </section>

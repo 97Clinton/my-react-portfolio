@@ -21,7 +21,6 @@
     .top {
         display: flex;
         justify-content: center;
-        margin-bottom: 50px;
 
         h2 {
             font-family: "Poppins", sans-serif;
@@ -74,6 +73,25 @@
                 color: #555555;
             }
 
+            .stack {
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    width: 100%;
+                    padding-left: 0;
+                    margin-bottom: 30px;
+
+                    li {
+                        list-style:none;
+                        border: 1px solid #f9f9f9;
+                        width: max-content;
+                        padding: 2px 4px;
+                        background-color: #f9f9f9;
+                    }
+                }
+            }
+
             .links {
                 display: flex;
                 justify-content: space-between;
@@ -89,6 +107,27 @@
         flex-direction: row-reverse;
     }
 
+    .more {
+        margin-bottom: 20px;
+        h4 {
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            color: #147efb;
+            border-bottom: 2px solid ;
+            width: fit-content;
+            padding-bottom: 10px;
+            transition: all 0.4s ease;
+            border-radius: 50%;
+
+            &:hover {
+                scale: 1.07;
+                border-radius: 0;
+            }
+            
+        }
+    }
+
     @include tablet {
         .project1 {
             display: flex;
@@ -102,11 +141,17 @@
             }
 
             .content {
-                width: 55vw;
+                width: 65vw;
             }
         }
     }
     @include mobile {
+        .projectsContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .content {
             width: 65vw;
         }

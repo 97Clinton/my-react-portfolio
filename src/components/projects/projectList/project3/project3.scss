@@ -47,6 +47,25 @@
             color: #555555;
         }
 
+        .stack {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                width: 100%;
+                padding-left: 0;
+                margin-bottom: 30px;
+
+                li {
+                    list-style:none;
+                    border: 1px solid #f9f9f9;
+                    width: max-content;
+                    padding: 2px 4px;
+                    background-color: #f9f9f9;
+                }
+            }
+        }
+        
         .links {
             display: flex;
             justify-content: space-between;

@@ -34,7 +34,7 @@ function Project5() {
 
 
     return (
-        <motion.div className="project4 shadow p-3 mb-5 bg-body rounded"
+        <motion.div className="project4 shadow-sm p-3 mb-5 bg-body rounded"
             ref={containerRef}
         >
             <motion.a 
@@ -48,6 +48,12 @@ function Project5() {
             >
                 <a href="https://github.com/97Clinton/To-Do-list-App/tree/master"><h3>To-Do LIST</h3></a>
                 <p>A to-do list website made with REACT.JS, Node.js. It can take in inputs, saves temporarily. </p>
+                <div className="stack">
+                    <ul>
+                        <li class="shadow-sm p-1 mb-1 rounded">JavaScript</li> <li class="shadow-sm p-1 mb-1 rounded">HTML, CSS</li> <li class="shadow-sm p-1 mb-1 rounded">Node.Js</li>
+                        <li class="shadow-sm p-1 mb-1 rounded">MongoDB</li> <li class="shadow-sm p-1 mb-1 rounded">Express.Js</li> <li class="shadow-sm p-1 mb-1 rounded">Cloudinary</li>
+                    </ul>
+                </div>
                 <div className="links">
                     <a href="https://github.com/97Clinton/To-Do-list-App/tree/master">Code <i class="fa-brands fa-square-github fa-beat"></i></a>
                     <a href="/">Live Demo <i class="fa-regular fa-globe fa-beat"></i></a>

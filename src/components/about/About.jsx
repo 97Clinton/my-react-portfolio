@@ -78,7 +78,7 @@ function About() {
                 <div className="content">
                     <h3>ABOUT ME</h3>
                     <h4>Front-end Developer based in Nigeria.</h4>
-                    <p>My name is Atayero Clinto, and I`m a graduate, also a Front-end developer for over 2years with proficiency at converting designs to a responsive web development that suits the purpose. </p>
+                    <p>My name is Clinton Atayero, and I`m a graduate, also a Front-end developer for over 2years with proficiency at converting designs to a responsive web development that suits the purpose. </p>
                     <p>Most importantly, I`ve had the experience of being a Team Leader in creating a Fullstack web project.</p>
                 </div>
             </div>

@@ -25,7 +25,7 @@ const headerVariants = {
 
 function ProjectSinglePage() {
 
-    const projArray = [<Project2 />, <Project3 />, <Project4 />, <Project5 />]
+    const projArray = [<Project2 />, <Project5 />]
 
     return(
         <div className="projectSinglePage">
