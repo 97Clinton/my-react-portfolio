@@ -53,12 +53,12 @@ function Projects() {
                 <h2>PROJECTS</h2>
             </motion.div>
             <motion.div className="projectsContainer">
-                <motion.div className="project1"
+                <motion.div className="project1 shadow p-3 mb-5 bg-body rounded"
                     ref={containerRef}
                 >
                     <motion.a 
                         style={{translateX: projectImgValue}}
-                        href="https://fetchmetadata.cyclic.app/" className="slider-1"
+                        href="https://fetch-metadata-app.onrender.com/" className="slider-1"
                     ><img src="./metadata.png" alt="" /></motion.a>
 
                     <motion.div className="content slider-1"
@@ -72,12 +72,9 @@ function Projects() {
                         </div>
                     </motion.div>
                 </motion.div>
-
-                <Project2 />
                 
                 <Project3 />
                 <Project4 />
-                <Project5 />
             </motion.div>
             
         </section>

@@ -1,9 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
 import "./navbar.scss";
 import { useState } from 'react';
-import { animate, motion } from 'framer-motion';
-
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import ProjectSinglePage from '../projects/projectSinglePage/ProjectSinglePage';
 
 const navContainerVariants = {
     hidden: {opacity: 0},
@@ -40,7 +40,7 @@ function Navbar() {
             <div className="right">
                 <a href="#homePage">Home</a>
                 <a href="#about">About</a>
-                <a href="#projects">Projects</a>
+                <Link to={"/projects"}>Projects</Link>
                 <a href="#contact">Contact</a>
             </div>
             <div className="menu">
@@ -64,7 +64,7 @@ function Navbar() {
                         <motion.a variants={navChildrenVariants} 
                             href="#about" data-bs-dismiss="offcanvas" onClick={(e) => {e.stopPropagation()}}>About</motion.a>
                         <motion.a variants={navChildrenVariants} 
-                            href="#projects" data-bs-dismiss="offcanvas" onClick={(e) => {e.stopPropagation()}}>Projects</motion.a>
+                            href="/projects" data-bs-dismiss="offcanvas" onClick={(e) => {e.stopPropagation()}}>Projects</motion.a>
                         <motion.a variants={navChildrenVariants} 
                             href="#contact" data-bs-dismiss="offcanvas" onClick={(e) => {e.stopPropagation()}}>Contact</motion.a>
                     </motion.div>

@@ -6,6 +6,7 @@
     gap: 40px;
     align-items: center;
     margin-bottom: 100px;
+    overflow: hidden;
 
     @include tablet {
         display: flex;
@@ -29,7 +30,10 @@
         width: 35vw;
 
         @include tablet {
-            width: 70vw;
+            width: 55vw;
+        }
+        @include mobile {
+            width: 65vw;
         }
         
         h3 {

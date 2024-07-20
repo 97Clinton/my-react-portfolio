@@ -42,13 +42,18 @@
         }
     }
 
+    .projectsContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
     .project1 {
         display: flex;
         justify-content: center;
         gap: 40px;
         align-items: center;
         margin-bottom: 100px;
-        // margin-top: 30px;
+        overflow: hidden;
         
         img {
             width: 27em;
@@ -97,8 +102,13 @@
             }
 
             .content {
-                width: 70vw;
+                width: 55vw;
             }
+        }
+    }
+    @include mobile {
+        .content {
+            width: 65vw;
         }
     }
 }

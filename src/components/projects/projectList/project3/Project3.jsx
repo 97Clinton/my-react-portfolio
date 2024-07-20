@@ -34,7 +34,7 @@ function Project3() {
 
 
     return (
-        <motion.div className="project3"
+        <motion.div className="project3 shadow p-3 mb-5 bg-body rounded"
             ref={containerRef}
         >
             <motion.a 
