@@ -109,6 +109,9 @@
 
     .more {
         margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         h4 {
             font-family: "Poppins", sans-serif;
             font-style: normal;

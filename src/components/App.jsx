@@ -8,6 +8,7 @@ import Footer from "./footer/Footer";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import ProjectSinglePage from "./projects/projectSinglePage/ProjectSinglePage";
 import MainHome from "./MainHome";
+import Experience from "./experience/Experience";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     return (
         <Router>
             <Routes>
+                <Route path="/experience" element={<Experience />} />
                 <Route path="/projects" element={<ProjectSinglePage />}/>
                 <Route path="/" element={<MainHome />}/>
             </Routes>

@@ -3,7 +3,6 @@ import "./projectSinglePage.scss";
 import Navbar from "../../navbar/Navbar";
 import { motion } from "framer-motion";
 import Project2 from "../projectList/project2/Project2";
-import Project3 from "../projectList/project3/Project3";
 import Project4 from "../projectList/project4/Project4";
 import Project5 from "../projectList/project5/Project5";
 
@@ -25,7 +24,7 @@ const headerVariants = {
 
 function ProjectSinglePage() {
 
-    const projArray = [<Project2 />, <Project5 />]
+    const projArray = [<Project4 />, <Project2 />, <Project5 />]
 
     return(
         <div className="projectSinglePage">

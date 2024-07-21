@@ -2,7 +2,7 @@ import "./projects.scss";
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView, useScroll, useTransform } from "framer-motion";
 import Project3 from "./projectList/project3/Project3";
-import Project4 from "./projectList/project4/Project4";
+import Project6 from "./projectList/project6/Project6";
 
 const moreVariant = {
     visible: {
@@ -24,18 +24,6 @@ function Projects() {
         target: containerRef,
         offset: ["start end", "end end"],
     });
-
-    // const projectImgValue = useTransform(
-    //     scrollYProgress,
-    //     [0, 1],
-    //     ["-100%", "0%"]
-    // )
-    // const projectTextValue = useTransform(
-    //     scrollYProgress,
-    //     [0, 1],
-    //     // ["100%", "0%"]
-    //     ["100%", "0%"]
-    // )
 
     const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
     const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1.5]);
@@ -94,7 +82,7 @@ function Projects() {
                 </motion.div>
                 
                 <Project3 />
-                <Project4 />
+                <Project6 />
 
                 <motion.div className="more"
                     variants={moreVariant}

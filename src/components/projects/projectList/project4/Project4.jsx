@@ -1,6 +1,6 @@
 import "./project4.scss";
-import { useEffect, useRef } from "react";
-import { motion, useAnimation, useInView, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 function Project4() {
 
@@ -16,7 +16,7 @@ function Project4() {
 
 
     return (
-        <motion.div className="project4 shadow-sm p-3 mb-5 bg-body rounded"
+        <motion.div className="project4 shadow p-3 mb-5 bg-body rounded"
             ref={containerRef}
             style={{
                 scale: scaleProgress,
@@ -30,8 +30,8 @@ function Project4() {
                 <p>This is a simple Front-End website for Laundry business with contact details, about the business and even a slide show. </p>
                 <div className="stack">
                     <ul>
-                        <li class="shadow-sm p-1 mb-1 rounded">JavaScript</li> <li class="shadow-sm p-1 mb-1 rounded">HTML, CSS</li> <li class="shadow-sm p-1 mb-1 rounded">Node.Js</li>
-                        <li class="shadow-sm p-1 mb-1 rounded">MongoDB</li> <li class="shadow-sm p-1 mb-1 rounded">Express.Js</li> <li class="shadow-sm p-1 mb-1 rounded">Cloudinary</li>
+                        <li class="shadow-sm p-1 mb-1 rounded">JavaScript</li> <li class="shadow-sm p-1 mb-1 rounded">HTML</li> <li class="shadow-sm p-1 mb-1 rounded">Bootstrap</li>
+                         <li class="shadow-sm p-1 mb-1 rounded">CSS</li>
                     </ul>
                 </div>
                 <div className="links">

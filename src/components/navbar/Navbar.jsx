@@ -39,8 +39,8 @@ function Navbar() {
             <div className="left"><h2 className='header-h2'><a href=""> <span>Clin</span>Tech</a></h2></div>
             <div className="right">
                 <a href="/">Home</a>
-                <a href="#about">About</a>
                 <Link to={"/projects"}>Projects</Link>
+                <Link to={"/experience"}>Experience</Link>
                 <a href="#contact">Contact</a>
             </div>
             <div className="menu">
@@ -58,12 +58,13 @@ function Navbar() {
                             variants={navChildrenVariants}
                             href="/" data-bs-dismiss="offcanvas" onClick={(e) => {e.stopPropagation()}}>Home
                         </motion.a>
-                        <motion.a variants={navChildrenVariants} 
-                            href="#about" data-bs-dismiss="offcanvas" onClick={(e) => {e.stopPropagation()}}>About</motion.a>
+                        
                         <motion.a variants={navChildrenVariants} 
                             href="/projects" data-bs-dismiss="offcanvas" onClick={(e) => {e.stopPropagation()}}>Projects</motion.a>
                         <motion.a variants={navChildrenVariants} 
-                            href="#contact" data-bs-dismiss="offcanvas" onClick={(e) => {e.stopPropagation()}}>Contact</motion.a>
+                            href="/experience" data-bs-dismiss="offcanvas" onClick={(e) => {e.stopPropagation()}}>Experience</motion.a>
+                        <motion.a variants={navChildrenVariants} 
+                            href="/#contact" data-bs-dismiss="offcanvas" onClick={(e) => {e.stopPropagation()}}>Contact</motion.a>
                     </motion.div>
                 </div>
 
