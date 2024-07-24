@@ -76,7 +76,7 @@ function Projects() {
                         </div>
                         <div className="links">
                             <a href="https://github.com/97Clinton/Fetch_Metadata-project">Code <i class="fa-brands fa-square-github fa-beat"></i></a>
-                            <a href="https://fetchmetadata.cyclic.app/">Live Demo <i class="fa-regular fa-globe fa-beat"></i> </a>
+                            <a href="https://fetch-metadata-app.onrender.com">Live Demo <i class="fa-regular fa-globe fa-beat"></i> </a>
                         </div>
                     </div>
                 </motion.div>
