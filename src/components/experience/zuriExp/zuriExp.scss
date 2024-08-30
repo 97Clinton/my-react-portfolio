@@ -1,0 +1,43 @@
+@import '../../../responsive.scss';
+
+.zuriExp {
+    padding-top: 150px;
+    margin-bottom: 50px;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+
+    .top {
+        margin-bottom: 20px;
+        
+        h2 {
+            font-weight: 700;
+        }
+
+        @include mobile {
+            h2 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .role {
+
+        h5 {
+            font-weight: 600;
+
+            span {
+                font-weight: 300;
+            }
+        }
+
+        @include mobile {
+            p {
+                font-size: 12px;
+            }
+            
+            h5 {
+                font-size: 14px;
+            }
+        }
+    }
+}

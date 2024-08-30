@@ -1,9 +1,10 @@
-@import "../../responsive.scss";
+@import '../../responsive.scss';
 
-.experience {
+.cert {
     margin: 0;
     padding: 0;
     width: 100vw;
+
 
     .container {
         display: flex;
@@ -32,34 +33,6 @@
                     border-radius: 0;
                 }
                 
-            }
-        }
-
-        .content {
-            width: 100%;
-            padding-top: 50px;
-
-            .logo {
-                padding-top: 150px;
-
-                img {
-                    width: 13em;
-
-                    @include mobile {
-                        width: 8em;
-                    }
-                }
-            }
-            
-            .logo2 {
-                padding-top: 30px;
-
-                img {
-
-                    @include mobile {
-                        width: 8em;
-                    }
-                }
             }
         }
     }

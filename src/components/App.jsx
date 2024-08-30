@@ -9,6 +9,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import ProjectSinglePage from "./projects/projectSinglePage/ProjectSinglePage";
 import MainHome from "./MainHome";
 import Experience from "./experience/Experience";
+import Certification from "./certificate/Certificate";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Router>
             <Routes>
                 <Route path="/experience" element={<Experience />} />
+                <Route path="/certifications" element={<Certification />} />
                 <Route path="/projects" element={<ProjectSinglePage />}/>
                 <Route path="/" element={<MainHome />}/>
             </Routes>

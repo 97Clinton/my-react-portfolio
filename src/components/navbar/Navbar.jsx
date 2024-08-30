@@ -41,6 +41,7 @@ function Navbar() {
                 <a href="/">Home</a>
                 <Link to={"/projects"}>Projects</Link>
                 <Link to={"/experience"}>Experience</Link>
+                <Link to={"/certifications"}>Certification</Link>
                 <a href="#contact">Contact</a>
             </div>
             <div className="menu">
@@ -63,6 +64,8 @@ function Navbar() {
                             href="/projects" data-bs-dismiss="offcanvas" onClick={(e) => {e.stopPropagation()}}>Projects</motion.a>
                         <motion.a variants={navChildrenVariants} 
                             href="/experience" data-bs-dismiss="offcanvas" onClick={(e) => {e.stopPropagation()}}>Experience</motion.a>
+                        <motion.a variants={navChildrenVariants} 
+                            href="/certifications" data-bs-dismiss="offcanvas" onClick={(e) => {e.stopPropagation()}}>Certification</motion.a>
                         <motion.a variants={navChildrenVariants} 
                             href="/#contact" data-bs-dismiss="offcanvas" onClick={(e) => {e.stopPropagation()}}>Contact</motion.a>
                     </motion.div>
