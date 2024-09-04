@@ -82,18 +82,19 @@ function Experience() {
                         }}
                       >
                         <TimelineItem>
+                          <TimelineContent>
+                              <ZuriExp />
+                          </TimelineContent>
+                          
+                          <TimelineSeparator>
+                            <TimelineDot />
+                            <TimelineConnector />
+                          </TimelineSeparator>
                           <TimelineOppositeContent color="text.secondary">
                               <div className="logo2">
                                   <img src="/zuri-logo.jfif" alt="" />
                               </div>
                           </TimelineOppositeContent>
-                          <TimelineSeparator>
-                            <TimelineDot />
-                            <TimelineConnector />
-                          </TimelineSeparator>
-                          <TimelineContent>
-                              <ZuriExp />
-                          </TimelineContent>
                         </TimelineItem>
                       </motion.div>
                       
