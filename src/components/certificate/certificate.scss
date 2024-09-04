@@ -35,5 +35,29 @@
                 
             }
         }
+
+        .content  {
+            width: 80vw;
+            // padding-top: 50px;
+
+            
+            .logo {
+                width: 80%;
+
+                img {
+                    cursor: pointer;
+
+                    @include desktop {
+                        width: 50vw;
+                        height: 60vh;
+                    }
+
+                    @include tablet {
+                        width: 70vw;
+                        height: 60vh;
+                    }
+                }
+            }
+        }
     }
 }

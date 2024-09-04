@@ -42,7 +42,7 @@ function Navbar() {
                 <Link to={"/projects"}>Projects</Link>
                 <Link to={"/experience"}>Experience</Link>
                 <Link to={"/certifications"}>Certification</Link>
-                <a href="#contact">Contact</a>
+                <a href="/#contact">Contact</a>
             </div>
             <div className="menu">
                 <a class="btn btn-primary" onClick={() => setIsOpen(true)} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"><img src="./menu.png" alt="" /></a>

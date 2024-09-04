@@ -66,7 +66,7 @@ function Projects() {
                     <a href="https://fetch-metadata-app.onrender.com/" className="slider-1"><img src="./metadata.png" alt="" /></a>
 
                     <div className="content slider-1">
-                        <a href="https://fetchmetadata.cyclic.app/"><h3>Fetch Metadata</h3></a>
+                        <a href="https://fetch-metadata-app.onrender.com/"><h3>Fetch Metadata</h3></a>
                         <p>A Fullstack website that allows users to extract Metadata information ( i.e creation date, geo-location / GPS cordinates, size, Camera settings, software etc. ) from files like videos, pictures, e-books, even music with just 3 steps. This is a ZURI team project, in which I was the Team Lead. </p>
                         <div className="stack">
                             <ul>
